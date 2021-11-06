@@ -1,0 +1,13 @@
+PROFILER:ENABLED = TRUE.
+PROFILER:DIRECTORY = "C:\work\progress-opentracing-profiler\profilerFiles".
+PROFILER:FILE-NAME = "C:\work\progress-opentracing-profiler\profilerFiles\test8.prof".
+PROFILER:LISTINGS = FALSE.
+PROFILER:DESCRIPTION = "PROFILER".
+PROFILER:PROFILING = TRUE.
+PROFILER:TRACE-FILTER = "*".
+
+run main.p(0).
+
+PROFILER:ENABLED = FALSE.
+PROFILER:PROFILING = FALSE.
+PROFILER:WRITE-DATA().

@@ -1,0 +1,28 @@
+stages:
+    - build
+    - test
+
+build:
+    stage: build
+    image: golang:latest
+    script:
+        # Compile and Build the binary
+        - go build -o $CI_PROJECT_DIR/bin/profiler-opentracing $CI_PROJECT_DIR/cmd/parse.go
+        # Build for windows
+        - export GOOS=windows
+        - go build -o $CI_PROJECT_DIR/bin/profiler-opentracing.exe $CI_PROJECT_DIR/cmd/parse.go
+    artifacts:
+        paths:
+            - $CI_PROJECT_DIR/bin/profiler-opentracing
+            - $CI_PROJECT_DIR/bin/profiler-opentracing.exe
+test:
+    stage: test
+    image: golang:latest
+    script:
+        # Run the all unit tests
+        - go get -u github.com/jstemmer/go-junit-report
+        - go test -v $CI_PROJECT_DIR/tests/... | go-junit-report -set-exit-code > report.xml
+    artifacts:
+        when: always
+        reports:
+            junit: report.xml

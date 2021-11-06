@@ -1,0 +1,62 @@
+3 10/11/2021 "PROFILER" 11:47:25 "" {"StmtCnt":21,"DataPts":46,"NumWrites":0,"TotTime":4.028688,"BufferSize":61440,"Directory":"C:\work\progress-opentracing-profiler\profilerFiles\","Propath":".,C:\Progress\OpenEdge\tty,C:\Progress\OpenEdge\tty\ablunit.pl,C:\Progress\OpenEdge\tty\adecomm.pl,C:\Progress\OpenEdge\tty\adecomp.pl,C:\Progress\OpenEdge\tty\adeedit.pl,C:\Progress\OpenEdge\tty\adeshar.pl,C:\Progress\OpenEdge\tty\dataadmin.pl,C:\Progress\OpenEdge\tty\OpenEdge.BusinessLogic.pl,C:\Progress\OpenEdge\tty\OpenEdge.Core.pl,C:\Progress\OpenEdge\tty\OpenEdge.ServerAdmin.pl,C:\Progress\OpenEdge\tty\prodict.pl,C:\Progress\OpenEdge,C:\Progress\OpenEdge\bin"}
+.
+5 "Main Main" "" 0 0 ""
+6 "test Test1 Test1" "" 0 4 ""
+4 "Test1 Test1 Test1" "" 0 10 ""
+3 "Test1" "" 34098 0 ""
+1 "run.p" "" 56670 0 ""
+2 "Main" "" 59149 0 ""
+7 "test Main Test1" "" 0 4 ""
+.
+4 0 5 1
+0 0 1 1
+6 7 7 1
+1 11 2 1
+1 11 3 1
+1 12 6 1
+1 11 4 1
+.
+0 0 1 0.000000 4.028692
+6 7 1 0.000049 3.015923
+7 6 1 0.000002 0.000002
+7 5 1 3.015857 3.015857
+2 0 1 0.000014 0.000014
+6 5 1 1.010996 1.010996
+3 0 1 0.000002 0.000002
+4 0 1 0.000016 0.000016
+5 0 1 0.000000 0.000000
+6 0 1 0.000006 4.026925
+1 7 1 0.000002 0.000002
+7 0 1 0.000015 3.015874
+1 11 1 0.001720 0.001752
+1 12 1 0.000004 4.026929
+6 8 1 0.000000 0.000000
+1 14 1 0.000005 0.000005
+.
+1 7 0.000002 0.216261
+2 0 0.000014 0.217959
+3 0 0.000002 0.217976
+5 0 0.000000 0.218003
+4 0 0.000016 0.217995
+1 11 0.001720 0.216263
+6 5 1.010996 0.218020
+7 5 3.015857 1.229069
+7 6 0.000002 4.244928
+7 0 0.000015 1.229064
+6 7 0.000049 1.229019
+6 8 0.000000 4.244942
+6 0 0.000006 0.218019
+1 12 0.000004 0.218015
+1 14 0.000005 4.244945
+.
+.
+0 0 0 0 1 4.028688 1
+1 0 1 0 1 4.028688 2 3 4 6
+2 1 2 11 1 0.000014
+3 1 3 11 1 0.000002
+4 1 4 11 1 0.000016 5
+5 4 5 0 1 0.000000
+6 1 6 12 1 4.026925 7
+7 6 7 7 1 3.015874
+.
+.
